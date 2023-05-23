@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.left-div{
+    width: 300px;
+    background-image: url(images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.right-div{
+    width: 300px;
+    height: 400px;
+    padding-left: 20px;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.right-div p{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    width: 250px;
+}
+
+.perfume{
+    letter-spacing: 5px;
+}
+
+.right-div h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 25px;
+    width: 250px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.price h2{
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    margin-right: 30px;
+}
+
+.price span{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.cart-button{
+    width: 250px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-button img{
+    margin-right: 10px;
+}
+
+.cart-button:active{
+    background-color: hsl(158, 44%, 12%);
+}
+
+
+/*------for mobile screen------*/
+
+@media only screen and (max-width: 800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .left-div{
+        background-image: url(images/image-product-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .right-div{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+
+    .perfume{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
